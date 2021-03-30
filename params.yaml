@@ -1,0 +1,13 @@
+
+epochs: 15
+
+lr: 0.00000021
+
+dvc_logs_dir: logs 
+
+log_file: logs.csv
+dropout: 0.124
+
+process:
+    threshold: 0.85
+

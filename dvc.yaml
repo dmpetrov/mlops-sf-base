@@ -1,0 +1,19 @@
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - mymodel.py
+    - train.py
+    - users.csv
+    params:
+    - dropout
+    - epochs
+    - lr
+    - process
+    outs:
+    - model.h5:
+        checkpoint: true
+    live:
+      logs:
+        summary: true
+        html: true
