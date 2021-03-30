@@ -27,7 +27,6 @@ class MyCallback(Callback):
     def on_epoch_end(self, epoch, logs={}):
         self.model.save(self.file)
         json.dump(logs, open(summary, 'w'))
-        make_checkpoint()
 
 mnist = tf.keras.datasets.mnist
 
